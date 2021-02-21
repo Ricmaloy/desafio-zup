@@ -1,8 +1,15 @@
 import React from 'react';
 
+import GlobalStyles from './styles/GlobalStyles';
+
+import List from './pages/List';
+
 function App() {
   return (
-    <h1>Teste</h1>
+    <>
+      <GlobalStyles/>
+      <List />
+    </>
   );
 }
 
