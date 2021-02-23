@@ -3,6 +3,7 @@ import React from 'react';
 import { MdSelectAll, MdDone, MdDeleteSweep } from 'react-icons/md';
 
 import formatName from '../../utils/formatName';
+import formatLocation from '../../utils/formatLocation';
 
 import { ProfileListContaier, 
          ProfileListItem, 
@@ -16,7 +17,7 @@ import { ProfileListContaier,
          ProfileListItemIntro
         } from './styles';
 
-type ProfileList = {
+type ProfileListProps = {
         id?: string;
         photo: string,
         name: string;
@@ -27,7 +28,7 @@ type ProfileList = {
 };
 
 interface IProfileList {
-    data: ProfileList[];
+    data: ProfileListProps[];
 }
 
 const ProfilesList: React.FC<IProfileList> = ( {data} ) => {
@@ -42,7 +43,7 @@ const ProfilesList: React.FC<IProfileList> = ( {data} ) => {
                             </ProfileListItemIntro>
                             <ProfileListItemEmail>{item.email}</ProfileListItemEmail>
                             <ProfileListItemNumber>{item.number}</ProfileListItemNumber>
-                            <ProfileListItemLocation>{item.location}</ProfileListItemLocation>
+                            <ProfileListItemLocation>{formatLocation(item.location)}</ProfileListItemLocation>
                             <ProfileListItemIcons>
                                 <ProfileListItemLink>
                                     <MdDeleteSweep href="#"/>
