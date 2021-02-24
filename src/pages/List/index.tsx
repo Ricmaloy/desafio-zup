@@ -54,6 +54,19 @@ export default function List() {
         setAllData(formatedProfiles);
     },[filterSearch.search, filterSearch.status]);
 
+    const handleStatusClick = (status: string) => {
+        
+        document.querySelectorAll('.status-btn').forEach(el => el.classList.remove('activated'));
+        document.querySelector(`.${status}`)?.classList.add('activated');
+
+        setFilterSearch( filter => {
+            filter.status = `${status}`;
+            return {
+                ...filter
+            };
+        })
+    }
+
     return(
         <Grid>
             <HeaderContainer>
@@ -73,32 +86,11 @@ export default function List() {
                 </SearchBar>
                 <FaUserCircle />
             </HeaderContainer>
-            {/* <button onClick={() => (
-                setFilterSearch(filter => {
-                    filter.status = 'atendido'
-                    return {
-                        ...filter
-                    }
-                }) 
-            )}>trocar p atendido</button>
-            <button onClick={() => (
-                setFilterSearch(filter => {
-                    filter.status = 'negado'
-                    return {
-                        ...filter
-                    }
-                }) 
-            )}>trocar p lixeira</button>
-            <button onClick={() => (
-                setFilterSearch(filter => {
-                    filter.status = 'aberto'
-                    return {
-                        ...filter
-                    }
-                }) 
-            )}>trocar p aberto</button> */}
+           
             <AsideContainer>
-                <Aside/>
+                <Aside
+                    onStatusClick={handleStatusClick}
+                />
             </AsideContainer>
 
             <ProfilesListContainer>
