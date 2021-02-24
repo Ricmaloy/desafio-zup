@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const AsideContainer = styled.aside`
+    grid-area: AS;
+
+    background-color: #fff;
+`;
+
 export const MenuContainer = styled.nav`
     display: flex;
     flex-direction: column;

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 
 import { v4 as uuidv4 } from 'uuid';
 
-import Input from '../../components/Input';
 import Aside from '../../components/Aside';
 import ProfilesList from '../../components/ProfilesList';
 
@@ -10,11 +9,8 @@ import formatFilter from '../../utils/formatFilter';
 
 import ProfilesDB from '../../repositories/profiles';
 
-import LogoZup from '../../assets/logo-zup-branco.png';
-import { FaUserCircle, FaSearch } from 'react-icons/fa';
-
-
-import { Grid, HeaderContainer, SearchBar, AsideContainer, ProfilesListContainer } from './styles';
+import { Grid, AsideContainer, ProfilesListContainer } from './styles';
+import { Header } from '../../components/Header';
 
 interface IData {
     id?: string;
@@ -67,31 +63,27 @@ export default function List() {
         })
     }
 
+    const handleSearchChange = ( search: string ) => {
+
+        setFilterSearch( filter => {
+            filter.search = `${search}`;
+            return {
+                ...filter
+            };
+        })
+    }
+
     return(
         <Grid>
-            <HeaderContainer>
-                <img src={`${LogoZup}`} alt="Zup Logo" />
-                <SearchBar>
-                    <FaSearch/>
-                    <Input 
-                        type="text" 
-                        placeholder="Buscar" 
-                        onChange={(e) => (setFilterSearch( filter => {
-                            filter.search = e.target.value;
-                            return {
-                                ...filter
-                            };
-                        }))}
-                    />
-                </SearchBar>
-                <FaUserCircle />
-            </HeaderContainer>
+            <Header
+                onSearchChange={handleSearchChange}
+            />
            
-            <AsideContainer>
+
                 <Aside
                     onStatusClick={handleStatusClick}
                 />
-            </AsideContainer>
+            {/* </AsideContainer> */}
 
             <ProfilesListContainer>
                 <ProfilesList data={allData} />

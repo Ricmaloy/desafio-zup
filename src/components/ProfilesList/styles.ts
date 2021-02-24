@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ProfileListContaier = styled.div`
+
     width: 90%;
     height: 90%;
 
@@ -14,6 +15,11 @@ export const ProfileListContaier = styled.div`
 
     box-shadow: 1px 1px 10px 3px rgba(0,0,0, .2);
 `;
+
+export const ProfilesListContainer = styled.main`
+    
+`;
+
 
 export const ProfileListItem = styled.div`
     width: 100%;
