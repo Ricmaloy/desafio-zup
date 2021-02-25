@@ -5,17 +5,7 @@ import { MdSelectAll, MdDone, MdDeleteSweep } from 'react-icons/md';
 import formatName from '../../utils/formatName';
 import formatLocation from '../../utils/formatLocation';
 
-import { ProfileListContaier, 
-         ProfileListItem, 
-         ProfileListItemName, 
-         ProfileListItemEmail, 
-         ProfileListItemNumber, 
-         ProfileListItemLocation , 
-         ProfileListItemIcons, 
-         ProfileListItemLink,
-         ProfileListItemPhoto,
-         ProfileListItemIntro
-        } from './styles';
+import { ProfilesListContainer, ProfileListItem, ProfileListItemIcons } from './styles';
 
 type ProfileListProps = {
         id?: string;
@@ -31,34 +21,40 @@ interface IProfileList {
     data: ProfileListProps[];
 }
 
-const ProfilesList: React.FC<IProfileList> = ( {data} ) => {
+const ProfilesList = ( {data}:IProfileList ) => {
     return (
-        <ProfileListContaier>
-            {
-                data.map(item => (
-                    <ProfileListItem key={item.id}>
-                            <ProfileListItemIntro>
-                                <ProfileListItemPhoto src={`${item.photo}`}></ProfileListItemPhoto>
-                                <ProfileListItemName>{formatName(item.name)}</ProfileListItemName>
-                            </ProfileListItemIntro>
-                            <ProfileListItemEmail>{item.email}</ProfileListItemEmail>
-                            <ProfileListItemNumber>{item.number}</ProfileListItemNumber>
-                            <ProfileListItemLocation>{formatLocation(item.location)}</ProfileListItemLocation>
+        <ProfilesListContainer>
+            <main>
+                {
+                    data.map(item => (
+                        <ProfileListItem key={item.id}>
+                            
+                            <div>
+                                <img src={`${item.photo}`} alt="User"></img>
+                                <p>{formatName(item.name)}</p>
+                            </div>
+
+                            <span>{item.email}</span>
+                            <span>{item.number}</span>
+                            <span>{formatLocation(item.location)}</span>
+
                             <ProfileListItemIcons>
-                                <ProfileListItemLink>
+                                <span>
                                     <MdDeleteSweep href="#"/>
-                                </ProfileListItemLink>
-                                <ProfileListItemLink>
+                                </span>
+                                <span>
                                     <MdSelectAll href="#"/>
-                                </ProfileListItemLink>
-                                <ProfileListItemLink>
+                                </span>
+                                <span>
                                     <MdDone href="#"/>
-                                </ProfileListItemLink>
+                                </span>
                             </ProfileListItemIcons>
-                    </ProfileListItem>
-                ))
-            }
-        </ProfileListContaier>
+
+                        </ProfileListItem>
+                    ))
+                }
+            </main>
+        </ProfilesListContainer>
     );
 }
 

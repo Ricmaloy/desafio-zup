@@ -1,25 +1,40 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
-export const ProfileListContaier = styled.div`
-
-    width: 90%;
-    height: 90%;
-
-    border-radius: 5px;
-
-    margin-top: 5%;
-
-    overflow-y: scroll;
-
-    background-color: #fff;
-
-    box-shadow: 1px 1px 10px 3px rgba(0,0,0, .2);
+const fadeInBottom = keyframes`
+    from {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 `;
 
-export const ProfilesListContainer = styled.main`
-    
-`;
+export const ProfilesListContainer = styled.div`
+    grid-area: CT;
 
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    main {
+        width: 90%;
+        height: 90%;
+
+        border-radius: 5px;
+        margin-top: 5%;
+
+        overflow-y: scroll;
+
+        background-color: var(--white);
+        box-shadow: 1px 1px 10px 3px var(--shadow);
+
+        animation: ${fadeInBottom} 1s ease-in-out;
+    }
+`;
 
 export const ProfileListItem = styled.div`
     width: 100%;
@@ -29,48 +44,37 @@ export const ProfileListItem = styled.div`
     justify-content: space-between;
     align-items: center;
 
-    color: #a3a3a3;
+    color: var(--text);
     font-size: 14px;
 
     padding: 0 15px;
     
     &:not(:first-child) {
-        border-top: 1px solid #a3a3a3;
+        border-top: 1px solid var(--text);
     }
 
     > * {
         width: 20%;
     }
-`;
 
-export const ProfileListItemIntro = styled.div`
-    display: flex;
-    align-items: center;
-`;
+    & div {
+        display: flex;
+        align-items: center;
 
+        img {
+            width: 50px;
+            height: 50px;
 
-export const ProfileListItemPhoto = styled.img`
-    width: 50px;
-    height: 50px;
+            border-radius: 50%;
+        }
 
-    border-radius: 50%;
-`;
+        p {
+            color: var(--highlight);
+            font-weight: bold;
 
-export const ProfileListItemName = styled.span`
-    color: #282828;
-    font-weight: bold;
-
-    margin-left: 15px;
-`;
-
-export const ProfileListItemEmail = styled.span`
-    
-`;
-export const ProfileListItemNumber = styled.span`
-    
-`;
-export const ProfileListItemLocation = styled.span`
-    
+            margin-left: 15px;
+        }
+    }
 `;
 
 export const ProfileListItemIcons = styled.div`
@@ -80,19 +84,19 @@ export const ProfileListItemIcons = styled.div`
     justify-content: center;
 
     font-size: 25px;
-`;
 
-export const ProfileListItemLink = styled.a`
-    cursor: pointer;
+    span {
+        cursor: pointer;
 
-    transition: all .3s;
+        transition: all .3s;
 
-    &:not(:first-child){
-        margin-left: 10px;
-    }
+        &:not(:first-child){
+            margin-left: 10px;
+        }
 
-    &:hover {
-        color: #8dc63f;
+        &:hover {
+            color: var(--green);
+        }
     }
 `;
 

@@ -6,7 +6,7 @@ type Props = {
     onStatusClick: (status: string) => void;
 }
 
-export default function Aside({onStatusClick}: Props) {
+const Aside = ({onStatusClick}: Props) => {
     return (
         <AsideContainer>
             <MenuContainer>
@@ -50,3 +50,5 @@ export default function Aside({onStatusClick}: Props) {
         </AsideContainer>
     );
 }
+
+export default Aside;

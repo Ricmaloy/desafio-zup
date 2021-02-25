@@ -9,7 +9,7 @@ type HeaderProps = {
     onSearchChange: (search: string) => void;
 }
 
-export function Header ({onSearchChange}:HeaderProps) {
+const Header = ({onSearchChange}:HeaderProps) => {
     return(
         <HeaderContainer>
             <img src={`${LogoZup}`} alt="Zup Logo" />
@@ -27,3 +27,5 @@ export function Header ({onSearchChange}:HeaderProps) {
         </HeaderContainer>
     )
 }
+
+export default Header;

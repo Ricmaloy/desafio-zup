@@ -1,6 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
+    :root{
+        --green: #8dc63f;
+        --blue: #0c3455;
+        --white: #fff;
+        --text: #a3a3a3;
+        --highlight: #282828;
+        --background: #dedede;
+        --shadow: rgba(0,0,0, .2);
+    }
+ 
     * {
         margin: 0;
         padding: 0;

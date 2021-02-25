@@ -10,9 +10,4 @@ export const Container = styled.input`
     background: transparent;
     
     border-radius: 50px;
-
-    &:focus,
-    &:valid {
-
-    }
 `;

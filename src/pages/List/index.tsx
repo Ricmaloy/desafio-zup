@@ -4,13 +4,13 @@ import { v4 as uuidv4 } from 'uuid';
 
 import Aside from '../../components/Aside';
 import ProfilesList from '../../components/ProfilesList';
+import Header from '../../components/Header';
 
 import formatFilter from '../../utils/formatFilter';
 
 import ProfilesDB from '../../repositories/profiles';
 
-import { Grid, AsideContainer, ProfilesListContainer } from './styles';
-import { Header } from '../../components/Header';
+import { Grid } from './styles';
 
 interface IData {
     id?: string;
@@ -22,7 +22,7 @@ interface IData {
     status: string;
 };
 
-export default function List() {
+const List = () => {
 
     const [allData, setAllData] = useState<IData[]>([]);
     const [filterSearch, setFilterSearch] = useState({
@@ -79,16 +79,15 @@ export default function List() {
                 onSearchChange={handleSearchChange}
             />
            
+            <Aside
+                onStatusClick={handleStatusClick}
+            />
 
-                <Aside
-                    onStatusClick={handleStatusClick}
-                />
-            {/* </AsideContainer> */}
-
-            <ProfilesListContainer>
-                <ProfilesList data={allData} />
-            </ProfilesListContainer>
-
+            <ProfilesList 
+                data={allData} 
+            />
         </Grid>
     );
 }
+
+export default List;

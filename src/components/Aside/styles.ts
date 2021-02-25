@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const AsideContainer = styled.aside`
     grid-area: AS;
 
-    background-color: #fff;
+    background-color: var(--white);
 `;
 
 export const MenuContainer = styled.nav`
@@ -18,7 +18,7 @@ export const MenuItemLink = styled.a`
     display: flex;
     align-items: center;
 
-    color: #a3a3a3;
+    color: var(--text);
     
     margin: 9px 0;
     
@@ -35,7 +35,7 @@ export const MenuItemLink = styled.a`
 
     &.activated {
         font-weight: bold;
-        color: #8dc63f!important;
+        color: var(--green);
     }
 
     &:hover {

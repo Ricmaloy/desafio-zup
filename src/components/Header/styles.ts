@@ -1,10 +1,31 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const openSearchBarAnimate = keyframes`
+    from {
+        width: 5%;
+    }
+    to {
+        width: 50%;
+    }
+`;
+
+const fadeInLeft = keyframes`
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+`;
+
 
 export const HeaderContainer = styled.header`
     grid-area: MH;
 
-    color: #282828;
-    background-color: #0c3455;
+    color: var(--highlight);
+    background-color: var(--blue);
 
     display: flex;
     align-items: center;
@@ -15,6 +36,8 @@ export const HeaderContainer = styled.header`
         height: 50px;
 
         margin-left: 55px;
+
+        animation: ${fadeInLeft} 1s;
     }
 
     svg {
@@ -23,7 +46,7 @@ export const HeaderContainer = styled.header`
 
         margin-right: 25px;
 
-        color: #fff;
+        color: var(--white);
     }
 `;
 
@@ -34,15 +57,17 @@ export const SearchBar = styled.div`
     display: flex;
     align-items: center;
 
-    background-color: #fff;
+    background-color: var(--white);
 
     border-radius: 50px;
+
+    animation: ${openSearchBarAnimate} 1s ease-in-out;
 
     svg {
         width: 20px;
         height: 20px;
         
-        color: #8dc63f;
+        color: var(--green);
 
         margin: 0 10px;
     }
