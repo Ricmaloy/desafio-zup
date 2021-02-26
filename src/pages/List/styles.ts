@@ -7,8 +7,8 @@ export const Grid = styled.div`
 
     background-color: var(--background);
 
-    grid-template-columns: 240px auto;
-    grid-template-rows: 70px auto;
+    grid-template-columns: 24rem auto;
+    grid-template-rows: 7rem auto;
 
     grid-template-areas: ' MH MH '
                          ' AS CT ';

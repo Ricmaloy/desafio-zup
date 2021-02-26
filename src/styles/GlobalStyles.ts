@@ -17,8 +17,12 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    
+
     html, body, #root {
         height: 100%;
+
+        font-size: 62.5%    // 10/16 - 62.5%    --->   1rem = 10px
     } 
 
     *, button, input {
@@ -33,5 +37,10 @@ export default createGlobalStyle`
 
     ::-webkit-scrollbar {
         width: 0px;
+    }
+
+    @media(min-width: 1600px) {
+            html { font-size: 76.92%; 
+        }
     }
 `;

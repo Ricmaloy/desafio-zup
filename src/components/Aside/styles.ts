@@ -10,8 +10,8 @@ export const MenuContainer = styled.nav`
     display: flex;
     flex-direction: column;
 
-    margin-top: 20px;
-    margin-left: 30px;
+    margin-top: 2rem;
+    margin-left: 3rem;
 `;
 
 export const MenuItemLink = styled.a`
@@ -20,17 +20,16 @@ export const MenuItemLink = styled.a`
 
     color: var(--text);
     
-    margin: 9px 0;
+    margin: 1rem 0;
     
-    font-size: 16px;
+    font-size: 1.6rem;
     text-decoration: none;
 
     transition: transform .3s;
 
     svg {
-        font-size: 25px;
-    
-        margin-right: 20px;
+        font-size: 2.5rem;
+        margin-right: 2rem;
     }
 
     &.activated {

@@ -32,19 +32,19 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
 
     img {
-        width: 80px;
-        height: 50px;
+        width: 8rem;
+        height: 5rem;
 
-        margin-left: 55px;
+        margin-left: 5.5rem;
 
         animation: ${fadeInLeft} 1s;
     }
 
     svg {
-        width: 35px;
-        height: 35px;
+        width: 3.5rem; 
+        height: 3.5rem;
 
-        margin-right: 25px;
+        margin-right: 2.5rem;
 
         color: var(--white);
     }
@@ -52,23 +52,23 @@ export const HeaderContainer = styled.header`
 
 export const SearchBar = styled.div`
     width: 50%;
-    height: 35px;
+    height: 3.5rem;
 
     display: flex;
     align-items: center;
 
     background-color: var(--white);
 
-    border-radius: 50px;
+    border-radius: 5rem;
 
     animation: ${openSearchBarAnimate} 1s ease-in-out;
 
     svg {
-        width: 20px;
-        height: 20px;
+        width: 2rem;
+        height: 2rem;
         
         color: var(--green);
 
-        margin: 0 10px;
+        margin: 0 1rem;
     }
 `;

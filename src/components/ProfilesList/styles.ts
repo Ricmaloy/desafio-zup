@@ -24,7 +24,7 @@ export const ProfilesListContainer = styled.div`
         width: 90%;
         height: 90%;
 
-        border-radius: 5px;
+        border-radius: .5rem;
         margin-top: 5%;
 
         overflow-y: scroll;
@@ -38,16 +38,16 @@ export const ProfilesListContainer = styled.div`
 
 export const ProfileListItem = styled.div`
     width: 100%;
-    height: 70px;
+    height: 7rem;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     color: var(--text);
-    font-size: 14px;
+    font-size: 1.4rem;
 
-    padding: 0 15px;
+    padding: 0 1.5rem;
     
     &:not(:first-child) {
         border-top: 1px solid var(--text);
@@ -62,8 +62,8 @@ export const ProfileListItem = styled.div`
         align-items: center;
 
         img {
-            width: 50px;
-            height: 50px;
+            width: 5rem;
+            height: 5rem;
 
             border-radius: 50%;
         }
@@ -72,18 +72,18 @@ export const ProfileListItem = styled.div`
             color: var(--highlight);
             font-weight: bold;
 
-            margin-left: 15px;
+            margin-left: 1.5rem;
         }
     }
 `;
 
 export const ProfileListItemIcons = styled.div`
-    width: 100px;
+    width: 10rem;
 
     display: flex;
     justify-content: center;
 
-    font-size: 25px;
+    font-size: 2.5rem;
 
     span {
         cursor: pointer;
@@ -92,6 +92,7 @@ export const ProfileListItemIcons = styled.div`
 
         &:not(:first-child){
             margin-left: 10px;
+            margin-left: 1rem;
         }
 
         &:hover {
