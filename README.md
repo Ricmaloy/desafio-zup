@@ -87,9 +87,11 @@ Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmalo
 
 * Filtro de pesquisas
   ![filter-app](https://i.imgur.com/2uoDxsP.gif)
+  <br/>
     
 * Menu Lateral 
   ![aside-app](https://i.imgur.com/btGya39.gif)
+  <br/>
 
 
 ### Contato   
