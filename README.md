@@ -86,10 +86,10 @@ Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmalo
 ### Funcionalidades   
 
 * Filtro de pesquisas
-  ![filter-app](midia/filter-app.gif)
+  ![filter-app](https://i.imgur.com/2uoDxsP.gif)
     
 * Menu Lateral 
-  ![aside-app](midia/aside-app.gif)
+  ![aside-app](https://i.imgur.com/btGya39.gif)
 
 
 ### Contato   
