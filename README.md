@@ -74,21 +74,22 @@ Instalar a versão mais recente do npm
    npm run start
    ```
    ou
+   
    ```sh
    yarn start
    ```
 
 ### Visualizção
 
-    Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmaloy.github.io/desafio-zup/) que está no Github Pages.
+Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmaloy.github.io/desafio-zup/) que está no Github Pages.
 
 ### Funcionalidades   
 
-    * Filtro de pesquisas
-      ![filter-app](midia\filter-app.gif)
+* Filtro de pesquisas
+  ![filter-app](midia/filter-app.gif)
     
-    * Menu Lateral 
-      ![aside-app](midia\aside-app.gif)
+* Menu Lateral 
+  ![aside-app](midia/aside-app.gif)
 
 
 ### Contato   
