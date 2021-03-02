@@ -33,6 +33,10 @@ export const ProfilesListContainer = styled.div`
         box-shadow: 1px 1px 10px 3px var(--shadow);
 
         animation: ${fadeInBottom} 1s ease-in-out;
+
+        @media(max-width: 1200px) {
+            height: 95%;
+        }
     }
 `;
 
@@ -57,7 +61,7 @@ export const ProfileListItem = styled.div`
         width: 20%;
     }
 
-    & div {
+    div {
         display: flex;
         align-items: center;
 
@@ -66,15 +70,24 @@ export const ProfileListItem = styled.div`
             height: 5rem;
 
             border-radius: 50%;
+
+            @media(max-width: 650px) {
+                width: 4rem;
+                height: 4rem;
+            }
         }
 
         p {
             color: var(--highlight);
             font-weight: bold;
-
             margin-left: 1.5rem;
+
+            @media(max-width: 650px) {
+                margin-left: .5rem;
+            }
         }
     }
+
 `;
 
 export const ProfileListItemIcons = styled.div`
@@ -91,13 +104,24 @@ export const ProfileListItemIcons = styled.div`
         transition: all .3s;
 
         &:not(:first-child){
-            margin-left: 10px;
             margin-left: 1rem;
+
+            @media(max-width: 650px) {
+                margin-left: .2rem;
+            }
         }
 
         &:hover {
             color: var(--green);
         }
+
+        @media(max-width: 650px) {
+            font-size: 2rem;
+        }
+    }
+
+    @media(max-width: 650px) {
+        width: auto;
     }
 `;
 

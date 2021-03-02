@@ -1,3 +1,6 @@
+
+// Formata o nome do usuário fazendo com que a(s) primeira(s) da nome
+// sejam maiúsculas 
 const formatName = (name: string) => {
     let names = name.split(' ');
     

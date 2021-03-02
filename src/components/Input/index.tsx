@@ -2,9 +2,9 @@ import React, {InputHTMLAttributes} from 'react';
 
 import { Container } from './styles';
 
-type IInputProps = InputHTMLAttributes<HTMLInputElement>;
+type InputProps = InputHTMLAttributes<HTMLInputElement>;
 
-const Input: React.FC<IInputProps> = ( { ...rest} ) => (
+const Input: React.FC<InputProps> = ( { ...rest} ) => (
     <Container {...rest}/>
 );
 

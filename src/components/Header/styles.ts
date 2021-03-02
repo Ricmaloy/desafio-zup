@@ -38,6 +38,17 @@ export const HeaderContainer = styled.header`
         margin-left: 5.5rem;
 
         animation: ${fadeInLeft} 1s;
+
+
+        @media(max-width: 1200px) {
+            margin-left: 2rem;
+        }
+
+        @media(max-width: 650px) {
+            width: 6rem;
+            height: 3rem;
+        }
+
     }
 
     svg {

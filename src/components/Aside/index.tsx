@@ -2,11 +2,14 @@ import { AsideContainer, MenuContainer, MenuItemLink } from './styles';
 
 import { MdSelectAll, MdDoneAll,MdDeleteSweep } from 'react-icons/md';
 
-type Props = {
+// repassa para o elemento uma função responsável 
+// por controlar as alterações nas categorias
+
+type AsideProps = {
     onStatusClick: (status: string) => void;
 }
 
-const Aside = ({onStatusClick}: Props) => {
+const Aside = ({onStatusClick}: AsideProps) => {
     return (
         <AsideContainer>
             <MenuContainer>
@@ -15,7 +18,7 @@ const Aside = ({onStatusClick}: Props) => {
                     href="/" 
                     onClick={(e) => {
                         e.preventDefault();
-                        onStatusClick('aberto')
+                        onStatusClick('aberto');
                     }
                 }>
                     <MdSelectAll/>
@@ -27,7 +30,7 @@ const Aside = ({onStatusClick}: Props) => {
                     href="/"  
                     onClick={(e) => {
                         e.preventDefault();
-                        onStatusClick('atendido')
+                        onStatusClick('atendido');
                     }
                 }>
                     <MdDoneAll/>
@@ -39,7 +42,7 @@ const Aside = ({onStatusClick}: Props) => {
                     href="/" 
                     onClick={(e) => {
                         e.preventDefault();
-                        onStatusClick('negado')
+                        onStatusClick('negado');
                     }
                 }>
                     <MdDeleteSweep/>

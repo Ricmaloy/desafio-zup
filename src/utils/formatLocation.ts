@@ -1,3 +1,6 @@
+
+// Formata a localização do usuário fazendo com que a(s) primeira(s) da cidade
+// sejam maiúsculas assim como a sigla do Estado
 const formatLocation = (location: string) => {
     const [city, state] = location.split(' - ');
 
@@ -16,8 +19,8 @@ const formatLocation = (location: string) => {
         let firstOthers = cityNames[0].slice(1);
         let secondOthers = cityNames[1].slice(1);
 
-        return `${firstCityName + firstOthers} ${secondCityName + secondOthers} - ${state.toUpperCase()}`
-    }
-}
+        return `${firstCityName + firstOthers} ${secondCityName + secondOthers} - ${state.toUpperCase()}`;
+    };
+};
 
 export default formatLocation;
