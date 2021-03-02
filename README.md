@@ -1,46 +1,100 @@
-# Getting Started with Create React App
+<br/>
+<p align="center"> Teste Estágio Front Web 👨‍💻 </p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<details open="open"> 
+    <summary>Sumário 📑<sumary>
+    <ol>
+    <li>
+      <a href="#sobre-o-projeto">Sobre o projeto</a>
+      <ul>
+        <li><a href="#tecnologias-utilizadas">Tecnologias utilizadas</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#pré-requisitos">Pré-Requisitos</a></li>
+        <li><a href="#instalações">Instalações</a></li>
+      </ul>
+    </li>
+    <li><a href="#visualização">Visualização</a></li>
+    <li><a href="#funcionalidades">Funcionalidades</a></li>
+    <li><a href="#Contato">Contato</a></li>
+    </ol>
+</details>
 
-## Available Scripts
+## Sobre o projeto
 
-In the project directory, you can run:
+Desafio proposto pela [ZUP Innovation](https://www.zup.com.br/) para estágio Front End.
 
-### `yarn start`
+Regras:
+ * O layout deverá se aproximar ao máximo da [figura](./midia/TesteEstágioFrontWeb.pdf).
+ * O código deverá estar organizado.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+O que sera um plus: 
+ * Implementar a funcionalidade de busca.
+  * Ao digitar no campo de busca, a listagem deve ser filtrada para exibir somente
+    aquelas pessoas que se enquadrem na busca digitada.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Tecnologias utilizadas
 
-### `yarn test`
+Aqui estão listadas os frameworks, libs e ferramentas que utilizei para desenvolver o desafio 📚
+* [React](https://pt-br.reactjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [React Icons](https://react-icons.github.io/react-icons/)
+* [Styled Components](https://styled-components.com/)
+* [uuidv4](https://www.npmjs.com/package/uuidv4)
+* [Github](https://docs.github.com/pt)
+* [Github Pages](https://docs.github.com/pt/github/working-with-github-pages/creating-a-github-pages-site)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `yarn build`
+Aqui estão algumas instruções caso queira configurar o projeto localmente.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré Requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Instalar a versão mais recente do npm
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `yarn eject`
+1. Clone o rpositório
+   ```sh
+   git clone https://github.com/Ricmaloy/desafio-zup.git
+   ```
+2. Instale os pacotes do NPM
+   ```sh
+   npm install
+   ```
+3. Execute o comando
+   ```sh
+   npm run start
+   ```
+   ou
+   ```sh
+   yarn start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Visualizção
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmaloy.github.io/desafio-zup/) que está no Github Pages.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Funcionalidades   
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    * Filtro de pesquisas
+      ![filter-app](midia\filter-app.gif)
+    
+    * Menu Lateral 
+      ![aside-app](midia\aside-app.gif)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Contato   
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Todas as minhas redes sociais estão listadas abaixo !
+
+* [Twitter](https://twitter.com/Ricardo_Zamboni)
+* [Linkedin](https://www.linkedin.com/in/ricardo-zamboni-3906471b3/)
+* [Github](https://github.com/Ricmaloy)
