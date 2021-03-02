@@ -36,7 +36,7 @@ O que sera um plus:
   * Ao digitar no campo de busca, a listagem deve ser filtrada para exibir somente
     aquelas pessoas que se enquadrem na busca digitada.
 
-### Tecnologias utilizadas
+## Tecnologias utilizadas
 
 Aqui estão listadas os frameworks, libs e ferramentas que utilizei para desenvolver o desafio 📚
 * [React](https://pt-br.reactjs.org/)
@@ -79,11 +79,11 @@ Instalar a versão mais recente do npm
    yarn start
    ```
 
-### Visualizção
+## Visualizção
 
 Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmaloy.github.io/desafio-zup/) que está no Github Pages.
 
-### Funcionalidades   
+## Funcionalidades   
 
 * Filtro de pesquisas
   <br/>
@@ -96,7 +96,7 @@ Para visualizar o desafio e interagir bastar clicar nesse [link](https://ricmalo
   <br/>
 
 
-### Contato   
+## Contato   
 
 Todas as minhas redes sociais estão listadas abaixo !
 
